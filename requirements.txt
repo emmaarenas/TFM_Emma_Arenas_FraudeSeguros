@@ -57,3 +57,4 @@ tornado==6.1
 tqdm==4.62.3
 typing_extensions==4.0.1
 xgboost==1.5.1
+shap==0.44.0
