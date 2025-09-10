@@ -43,6 +43,11 @@ def load_feature_cols():
         feature_cols = pickle.load(f)
     return feature_cols
 
+# Carga del explainer de SHAP previamente guardado
+def load_shap_explainer():
+    explainer = joblib.load(os.path.join(ARTIFACTS_DIR, 'explainer.pkl'))
+    return explainer
+
 # Preprocesamiento de datos según el io_schema
 def preprocess_data(data, schema, feature_cols):
     col_map = [
@@ -196,6 +201,19 @@ def model_service(data):
         print("Recomendaciones:")
         for rec in recomendaciones[i]:
             print(f" - {rec}")
+    # Explainer
+    explainer = load_shap_explainer()
+    # Explicar las predicciones usando el explainer cargado
+    if 'lgbm' in models:
+        shap_values = explainer.shap_values(data)
+        shap.summary_plot(shap_values, data)
+    else:
+        print("Modelo no encontrado en los modelos cargados.")
+    return {
+        "score": round(float(scores[0]), 2),
+        "riesgo": riesgos[0],
+        "recomendaciones": recomendaciones[0]
+    }    
 
 # Capa de IA
 def generar_explicacion_llm(resultado, entrada, api_key):
