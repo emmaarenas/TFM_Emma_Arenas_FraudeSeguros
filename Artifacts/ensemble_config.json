@@ -1,0 +1,1 @@
+{"weights": {"logreg": 0.1, "rf": 0.1, "xgb": 0.3, "lgbm": 0.4}, "threshold": 0.18}

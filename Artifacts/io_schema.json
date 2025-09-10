@@ -1,0 +1,235 @@
+{
+    "FECHA DEL ACCIDENTE": {
+    "type": "date",
+    "format": "%d/%m/%Y"
+    },
+    "FECHA DE LA RECLAMACION": {
+    "type": "date",
+    "format": "%d/%m/%Y"
+    },
+    "MARCA DEL VEHICULO": {
+    "original": "Make",
+    "type": "categorical",
+    "options": {
+        "ACURA": 0,
+        "BMW": 1,
+        "CHEVROLET": 2,
+        "DODGE": 3,
+        "FERRARI": 4,
+        "FORD": 5,
+        "HONDA": 6,
+        "JAGUAR": 7,
+        "LEXUS": 8,
+        "MAZDA": 9,
+        "MERCEDES": 10,
+        "MERCURY": 11,
+        "NISSAN": 12,
+        "PONTIAC": 13,
+        "PORSCHE": 14,
+        "SAAB": 15,
+        "SATURN": 16,
+        "TOYOTA": 17,
+        "VOLKSWAGEN": 18,
+        "OTRA": -1 }
+    },  
+    "ZONA DONDE OCURRIO EL ACCIDENTE": {
+    "original": "AccidentArea",
+    "type": "categorical",
+    "options": {
+        "ZONA URBANA": 1,
+        "ZONA RURAL": 0 }
+    },  
+    "GENERO DEL ASEGURADO": {
+    "original": "Sex",
+    "type": "categorical",
+    "options": {
+        "MUJER": 0,
+        "HOMBRE": 1 }
+    },  
+    "EDAD DEL ASEGURADO": {
+    "original": "AgeOfPolicyHolder",
+    "type": "numeric",
+    "notes": "Variable original en rangos; aquí se usa la media numérica."
+    },     
+    "ESTADO CIVIL DEL ASEGURADO": {
+    "original": "MaritalStatus",
+    "type": "categorical",
+    "options": {
+        "DIVORCIADO": 0,
+        "CASADO": 1,
+        "SOLTERO": 2,
+        "VIUDO": 3 }
+    },  
+    "CULPABLE DEL ACCIDENTE": {
+    "original": "Fault",
+    "type": "categorical",
+    "options": {
+        "EL PROPIO ASEGURADO": 0,
+        "OTRA PERSONA": 1 }
+    },
+    "TIPO DE VEHICULO": {
+    "original": "VehicleCategory",
+    "type": "categorical",
+    "options": {
+        "SEDAN": 0,
+        "DEPORTIVO": 1,
+        "UTILITARIO": 2 }
+    },
+    "PRECIO DEL VEHICULO": {
+    "original": "VehiclePrice",
+    "type": "numeric",
+    "notes": "Conversión desde rangos en USD a valor medio en EUR."
+    },
+    "FRANQUICIA DE LA POLIZA": {
+    "original": "Deductible",
+    "type": "categorical",
+    "options": {
+        "SIN FRANQUICIA": -1,
+        "300 EUROS": 300,
+        "400 EUROS": 400,
+        "500 EUROS": 500,
+        "700 EUROS": 700 }
+    },
+    "FECHA EN LA QUE SE EMITIO LA POLIZA": {
+    "type": "date",
+    "format": "%d/%m/%Y"
+    },
+    "NUMERO DE RECLAMACIONES PASADAS": {
+    "original": "PastNumberOfClaims",
+    "type": "numeric"
+    },
+    "ANTIGUEDAD DEL VEHICULO": {
+    "original": "AgeOfVehicle",
+    "type": "categorical",
+        "options": {
+            "MENOS DE 2": 0.5, 
+            "2": 2,
+            "3": 3,
+            "4 ": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "MAS DE 7": 8 }
+    },
+    "INFORME POLICIAL DEL ACCIDENTE": {
+    "original": "PoliceReportFiled",
+    "type": "categorical",
+    "options": {
+        "EXISTE": 1,
+        "NO EXISTE": 0 }
+    },   
+    "TESTIGOS DEL ACCIDENTE": {
+    "original": "WitnessPresent",
+    "type": "categorical",
+    "options": {
+        "EXISTEN": 1,
+        "NO EXISTEN": 0 }
+    },
+    "TIPO DE AGENTE QUE GESTIONO LA POLIZA": {
+    "original": "AgentType",
+    "type": "categorical",
+    "options": {
+        "EXTERNO": 0,
+        "INTERNO": 1 }
+    },
+    "NUMERO DE DOCUMENTOS RELACIONADOS CON EL ACCIDENTE": {
+    "original": "NumberOfSuppliments",
+    "type": "numeric"
+    },  
+    "CUANTO TIEMPO DESPUES SE MUDO EL ASEGURADOR TRAS EL ACCIDENTE": {
+    "original": "AddressChange_Claim",
+    "type": "categorical",
+    "options": {
+        "NO SE HA MUDADO": 1,
+        "MENOS DE 6 MESES": 0,
+        "ENTRE 6 MESES Y 1": 2,
+        "ENTRE 2 Y 3": 3,
+        "ENTRE 4 Y 8": 4
+        }
+    },   
+    "NUMERO DE COCHES INVOLUCRADOS EN EL ACCIDENTE": {
+    "original": "NumberOfCars",
+    "type": "numeric"
+    },   
+    "TIPO DE POLIZA": {
+    "original": "BasePolicy",
+    "type": "categorical",
+    "options": {
+        "A TODO RIESGO": 0,
+        "COLISION": 1,
+        "RESPONSABILIDAD CIVIL": 2 }
+    },
+    "MES DEL ACCIDENTE": {
+    "original": "Month",
+    "type": "derived",
+    "derived": true,
+    "format": "%d/%m/%Y",
+    "from": ["FECHA DEL ACCIDENTE"],
+    "options": {
+    "Jan": 0, "Feb": 1, "Mar": 2, "Apr": 3, "May": 4, "Jun": 5,
+    "Jul": 6, "Aug": 7, "Sep": 8, "Oct": 9, "Nov": 10, "Dec": 11
+    }
+    },
+    "SEMANA DEL MES DEL ACCIDENTE": {
+    "original": "WeekOfMonth",
+    "type": "derived_numeric",
+    "derived": true,
+    "format": "%d/%m/%Y",
+    "from": ["FECHA DEL ACCIDENTE"]
+},
+    "DIA DE LA SEMANA DEL ACCIDENTE": {
+    "original": "DayOfWeek",
+    "type": "derived",
+    "derived": true,
+    "from": ["FECHA DEL ACCIDENTE"],
+    "format": "%d/%m/%Y",
+    "options": {
+    "Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3,
+    "Friday": 4, "Saturday": 5, "Sunday": 6
+    }
+    },
+    "MES DE LA RECLAMACION": {
+    "original": "MonthClaimed",
+    "type": "derived",
+    "derived": true,
+    "from": ["FECHA DE LA RECLAMACION"],
+    "format": "%d/%m/%Y",
+    "options": {
+    "Jan": 0, "Feb": 1, "Mar": 2, "Apr": 3, "May": 4, "Jun": 5,
+    "Jul": 6, "Aug": 7, "Sep": 8, "Oct": 9, "Nov": 10, "Dec": 11
+    }
+    },
+    "SEMANA DEL MES DE LA RECLAMACION": {
+    "original": "WeekOfMonthClaimed",
+    "type": "derived_numeric",
+    "derived": true,
+    "from": ["FECHA DE LA RECLAMACION"],
+    "format": "%d/%m/%Y"
+    },
+    "DIA DE LA SEMANA DE LA RECLAMACION": {
+    "original": "DayOfWeekClaimed",
+    "type": "derived",
+    "derived": true,
+    "from": ["FECHA DE LA RECLAMACION"],
+    "format": "%d/%m/%Y",
+    "options": {
+    "Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3,
+    "Friday": 4, "Saturday": 5, "Sunday": 6 }
+    },
+    "DIAS QUE HAN PASADO DESDE QUE SE EMITIO LA POLIZA HASTA EL ACCIDENTE": {
+    "original": "Days_Policy_Accident",
+    "type": "derived_numeric",
+    "derived": true,
+    "from": ["FECHA EN LA QUE SE EMITIO LA POLIZA", "FECHA DEL ACCIDENTE"],
+    "unit": "days",
+    "notes": "Diferencia en días: accidente - emisión."
+    },
+    "DIAS QUE HAN PASADO DESDE QUE SE EMITIO LA POLIZA HASTA LA RECLAMACION": {
+    "original": "Days_Policy_Claim",
+    "type": "derived_numeric",
+    "derived": true,
+    "from": ["FECHA EN LA QUE SE EMITIO LA POLIZA", "FECHA DE LA RECLAMACION"],
+    "unit": "days",
+    "notes": "Diferencia en días: reclamación - emisión."
+    }
+}

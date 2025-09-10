@@ -1,0 +1,76 @@
+{
+  "Carlos García_20250910161419": {
+    "entrada": {
+      "FECHA DE LA RECLAMACION": "10/09/2025",
+      "FECHA DEL ACCIDENTE": "08/09/2025",
+      "FECHA EN LA QUE SE EMITIO LA POLIZA": "01/09/2025",
+      "MARCA DEL VEHICULO": "BMW",
+      "TIPO DE VEHICULO": "SEDAN",
+      "ANTIGUEDAD DEL VEHICULO": "MAS DE 7",
+      "PRECIO DEL VEHICULO": 30000,
+      "FRANQUICIA DE LA POLIZA": "SIN FRANQUICIA",
+      "TIPO DE POLIZA": "A TODO RIESGO",
+      "GENERO DEL ASEGURADO": "HOMBRE",
+      "EDAD DEL ASEGURADO": 30,
+      "ESTADO CIVIL DEL ASEGURADO": "CASADO",
+      "NUMERO DE RECLAMACIONES PASADAS": 3,
+      "CUANTO TIEMPO DESPUES SE MUDO EL ASEGURADOR TRAS EL ACCIDENTE": "NO SE HA MUDADO",
+      "TIPO DE AGENTE QUE GESTIONO LA POLIZA": "EXTERNO",
+      "ZONA DONDE OCURRIO EL ACCIDENTE": "ZONA URBANA",
+      "CULPABLE DEL ACCIDENTE": "EL PROPIO ASEGURADO",
+      "NUMERO DE COCHES INVOLUCRADOS EN EL ACCIDENTE": 0,
+      "INFORME POLICIAL DEL ACCIDENTE": "NO EXISTE",
+      "TESTIGOS DEL ACCIDENTE": "NO EXISTEN",
+      "NUMERO DE DOCUMENTOS RELACIONADOS CON EL ACCIDENTE": 0
+    },
+    "resultado": {
+      "score": 0.34,
+      "riesgo": "Alto riesgo",
+      "recomendaciones": [
+        "Confirmar la responsabilidad declarada por el asegurado.",
+        "El accidente ocurrió poco después de contratar la póliza: revisar con atención.",
+        "Agente externo involucrado: revisar consistencia de la documentación.",
+        "Evaluar nivel de cobertura total de la póliza por posible incentivo a fraude.",
+        "Falta total de respaldo documental: enviar perito o iniciar investigación formal."
+      ]
+    },
+    "explicacion_ia": "\nEl reclamo ha sido clasificado como de alto riesgo por varias razones que merecen ser consideradas con atención. \n\nEn primer lugar, el accidente ocurrió solo una semana después de que el asegurado contratara la póliza. Este corto periodo podría generar sospechas sobre la autenticidad del reclamo, dado que no es común que un accidente se presente tan pronto tras la activa contratación de un seguro.\n\nAdemás, es importante notar que el asegurado se declara responsable del accidente, pero no hay testigos que puedan verificar su versión de los hechos. La falta de testigos, combinada con la ausencia de un informe policial, deja muchas preguntas sin responder, lo que aumenta el nivel de incertidumbre sobre lo ocurrido.\n\nPor otra parte, la documentación relacionada con el accidente es inexistente; no se han presentado documentos que respalden el reclamo. Ante esta falta de evidencia, se recomienda enviar a un perito o iniciar una investigación formal para asegurar que el reclamo sea evaluado de manera justa y rigurosa.\n\nAdicionalmente, el hecho de que el asegurado tenga tres reclamos pasados puede considerarse un patrón de comportamiento que aumenta la preocupación de posibles fraudes. También es relevante considerar el tipo de póliza a todo riesgo, que podría incentivar a algunos asegurados a presentar reclamos menos genuinos.\n\nDado todo lo anterior, es fundamental proceder con cautela y seguir las recomendaciones para verificar la consistencia de la información antes de tomar una decisión definitiva."
+  },
+  "Carmen Sánchez_20250910161741": {
+    "entrada": {
+      "FECHA DE LA RECLAMACION": "10/09/2025",
+      "FECHA DEL ACCIDENTE": "05/09/2025",
+      "FECHA EN LA QUE SE EMITIO LA POLIZA": "14/12/2024",
+      "MARCA DEL VEHICULO": "VOLKSWAGEN",
+      "TIPO DE VEHICULO": "DEPORTIVO",
+      "ANTIGUEDAD DEL VEHICULO": "4 ",
+      "PRECIO DEL VEHICULO": 22500,
+      "FRANQUICIA DE LA POLIZA": "300 EUROS",
+      "TIPO DE POLIZA": "COLISION",
+      "GENERO DEL ASEGURADO": "MUJER",
+      "EDAD DEL ASEGURADO": 22,
+      "ESTADO CIVIL DEL ASEGURADO": "SOLTERO",
+      "NUMERO DE RECLAMACIONES PASADAS": 1,
+      "CUANTO TIEMPO DESPUES SE MUDO EL ASEGURADOR TRAS EL ACCIDENTE": "NO SE HA MUDADO",
+      "TIPO DE AGENTE QUE GESTIONO LA POLIZA": "EXTERNO",
+      "ZONA DONDE OCURRIO EL ACCIDENTE": "ZONA RURAL",
+      "CULPABLE DEL ACCIDENTE": "OTRA PERSONA",
+      "NUMERO DE COCHES INVOLUCRADOS EN EL ACCIDENTE": 1,
+      "INFORME POLICIAL DEL ACCIDENTE": "NO EXISTE",
+      "TESTIGOS DEL ACCIDENTE": "EXISTEN",
+      "NUMERO DE DOCUMENTOS RELACIONADOS CON EL ACCIDENTE": 1
+    },
+    "resultado": {
+      "score": 0.02,
+      "riesgo": "Bajo riesgo",
+      "recomendaciones": [
+        "Consultar los documentos suplementarios adjuntos al reclamo.",
+        "Solicitar testimonio o contacto del testigo.",
+        "Confirmar la responsabilidad declarada por el asegurado.",
+        "Agente externo involucrado: revisar consistencia de la documentación.",
+        "Evaluar el contexto del accidente por tratarse de un vehículo deportivo."
+      ]
+    },
+    "explicacion_ia": "El nivel de riesgo del reclamo se ha clasificado como bajo, basándose en varios factores que se han analizado cuidadosamente. Aunque el reclamo presenta ciertos aspectos que podrían generar dudas, hay elementos positivos que contribuyen a esta clasificación.\n\nUno de los puntos más resaltantes es que existen testigos del accidente. La presencia de testigos que pueden corroborar la versión de los hechos generalmente disminuye la incertidumbre alrededor del reclamo, ya que su testimonio puede proporcionar detalles importantes sobre lo ocurrido. Sin embargo, es recomendable seguir la sugerencia de solicitar su testimonio o datos de contacto para garantizar que la información sea consistente.\n\nPor otro lado, no se ha presentado un informe policial del accidente. Aunque esto puede considerarse una debilidad, el hecho de que solo se haya involucrado un vehículo y se haya determinado que la culpa recae en otra persona sugiere que la situación es relativamente clara y manejable. A pesar de la falta del informe, este aspecto puede no afectar gravemente la validez del reclamo, pero se recomienda revisar la consistencia de la documentación presentada y confirmar la responsabilidad declarada por el asegurado.\n\nLa antigüedad y el valor del vehículo también permiten hacer consideraciones adicionales. Se trata de un vehículo deportivo relativamente nuevo, lo que puede incrementar el interés en el reclamo y, a su vez, la necesidad de una evaluación más cuidadosa del contexto del accidente. Esto sugiere que puede haber más en juego si se buscan obtener beneficios indevidos.\n\nFinalmente, es importante tener en cuenta que el asegurado tiene una reclamación pasada. Esto puede ser un factor que, aunque no necesariamente genera un riesgo alto de fraude, se debe tener en mente al evaluar la situación."
+  }
+}
