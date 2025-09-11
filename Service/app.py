@@ -1,6 +1,5 @@
-# =====================================
-#            LIBRERÍAS
-# =====================================
+# LIBRERÍAS
+
 import streamlit as st 
 import json
 import pandas as pd 
@@ -9,9 +8,9 @@ from datetime import datetime, timedelta
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Ruta absoluta al directorio /Service
 
-# =====================================
-#     CARGAR HISTORIAL DESDE JSON
-# =====================================
+
+# CARGA DEL HISTORIAL DE RECLAMOS DESDE JSON
+
 historial_file = os.path.join(BASE_DIR, ".", "historial.json")
 historial_file = os.path.abspath(historial_file)
 if os.path.exists(historial_file) and os.path.getsize(historial_file) > 0:
@@ -26,10 +25,10 @@ if os.path.exists(historial_file) and os.path.getsize(historial_file) > 0:
 else:
     st.session_state.historial_ids = []
 
-# =====================================
-#            CONFIGURACIÓN
-# =====================================
-# Cargar la configuración de Streamlit desde el archivo config.toml que está en .streamlit
+
+# CONFIGURACIÓN
+
+# Carga de la configuración de Streamlit desde el archivo config.toml que está en .streamlit
 config_path = os.path.join(BASE_DIR, "..", ".streamlit", "config.toml")
 config_path = os.path.abspath(config_path)
 
@@ -41,13 +40,11 @@ st.set_page_config(
     layout="wide"
 )
 
-
-
 # Inicializar modo
 if "modo_actual" not in st.session_state:
     st.session_state.modo_actual = "formulario"
 
-# Cargar schema
+# Carga del schema
 ruta_schema = os.path.join(os.path.dirname(__file__), '..', 'Artifacts', 'io_schema.json')
 ruta_schema = os.path.abspath(ruta_schema)  
 with open(ruta_schema, 'r', encoding='utf-8') as f:
@@ -60,22 +57,18 @@ st.markdown("""
     input, textarea {
         color: white !important;
     }
-
     /* Placeholder blanco */
     ::placeholder {
         color: white !important;
         opacity: 1 !important;
     }
-
     /* Selectbox (más específico para BaseWeb) */
     .stSelectbox div[data-baseweb="select"] > div {
         color: white !important;
     }
-
     .stSelectbox div[data-baseweb="select"] div[role="option"] {
         color: black !important;  /* Puedes dejar blanco si fondo oscuro */
     }
-
     /* También sliders */
     .stSlider > div[data-baseweb="slider"] > div {
         color: white !important;
@@ -106,7 +99,6 @@ st.markdown("""
         padding: 6px 12px !important;
         font-weight: bold !important;
     }
-
     /* Opcional: cambiar color al pasar el ratón */
     section[data-testid="stSidebar"] button[kind="secondary"]:hover {
         background-color: #3C556B !important;
@@ -116,9 +108,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# =====================================
-#            ENCABEZADO UI
-# =====================================
+# ENCABEZADO UI
 
 col1, col2, col3 = st.columns([3, 2, 1], gap="large")
 
@@ -169,9 +159,9 @@ st.markdown("""
     <hr style='margin-top: 40px; margin-bottom: 40px; border: none; height: 2px; background-color: #cccccc;' />
 """, unsafe_allow_html=True)
 
-# =====================================
-#         BARRA LATERAL
-# =====================================
+
+# BARRA LATERAL
+
 st.sidebar.title("⚙️ Configuración")
 api_key = st.sidebar.text_input("🔐 Ingresa la clave API", type="password")
 if api_key:
@@ -222,9 +212,8 @@ if "historial_ids" in st.session_state and st.session_state.historial_ids:
 else:
     st.sidebar.warning("Aún no hay análisis registrados")
 
-# =====================================
-#         MODO FORMULARIO
-# =====================================
+
+# MODO FORMULARIO
 
 orden_campos = [
         "FECHA DE LA RECLAMACION",
@@ -385,9 +374,7 @@ if st.session_state.modo_actual == "formulario":
                     st.error(f"❌ Error al procesar el reclamo: {e}")
 
 
-# =====================================
-#       MODO ANÁLISIS
-# =====================================
+# MODO ANÁLISIS
 
 if st.session_state.modo_actual == "analisis" and "ultimo_analisis" in st.session_state:
     data = st.session_state[f"analisis_{st.session_state.ultimo_analisis}"]
