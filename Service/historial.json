@@ -185,5 +185,42 @@
       ]
     },
     "explicacion_ia": "El reclamo se ha clasificado con un alto nivel de riesgo debido a varias razones que generan dudas sobre la legitimidad del mismo. \n\nEn primer lugar, el accidente ocurrió el mismo día en que se emitió la póliza, lo que despierta sospechas, ya que esto puede interpretarse como un intento de aprovechar una cobertura recién adquirida. Este hecho requiere un análisis cuidadoso para determinar si el accidente es genuino o si se trata de un intento de fraude. \n\nAdicionalmente, la falta de informes policiales y de testigos del accidente es alarmante. Sin un reporte oficial que confirme las circunstancias del siniestro y la ausencia de personas que hayan presenciado el incidente, se dificulta la veracidad de los hechos denunciados. Este vacío documental es significativo, considerando la magnitud del accidente y la naturaleza del vehículo involucrado, que es un deportivo. Este tipo de vehículos, por lo general, tiene un alto valor y puede ser atractivo para fraudes.\n\nOtro aspecto relevante es que el asegurado ha cambiado de domicilio recientemente. Es fundamental validar este cambio, ya que un nuevo domicilio puede complicar la situación y suscitar más dudas sobre la solidez del reclamo. Además, el asegurado tiene un historial de cinco reclamos anteriores, lo que podría reflejar un patrón que requiere atención especial y provoca inquietudes respecto a la frecuencia de los siniestros reportados.\n\nLa relación con un agente externo también añade un layer adicional de riesgo, considerando que debe revisarse la documentación involucrada para asegurar que sea coherente y esté completa. Sin documentos relacionados con el accidente, y dado el tipo de póliza contratada, que es a todo riesgo sin franquicia, hay incentivos que pueden motivar intentos de fraude.\n\nEl hecho de que no haya vehículos involucrados (sólo el del asegurado) y la insuficiencia de documentación refuerzan la decisión de enviar a un perito o iniciar una investigación formal sobre el incidente."
+  },
+  "Miriam Valero_20250911140240": {
+    "entrada": {
+      "FECHA DE LA RECLAMACION": "11/09/2025",
+      "FECHA DEL ACCIDENTE": "11/09/2025",
+      "FECHA EN LA QUE SE EMITIO LA POLIZA": "11/09/2025",
+      "MARCA DEL VEHICULO": "VOLKSWAGEN",
+      "TIPO DE VEHICULO": "SEDAN",
+      "ANTIGUEDAD DEL VEHICULO": "5",
+      "PRECIO DEL VEHICULO": 11500,
+      "FRANQUICIA DE LA POLIZA": "SIN FRANQUICIA",
+      "TIPO DE POLIZA": "A TODO RIESGO",
+      "GENERO DEL ASEGURADO": "MUJER",
+      "EDAD DEL ASEGURADO": 25,
+      "ESTADO CIVIL DEL ASEGURADO": "SOLTERO",
+      "NUMERO DE RECLAMACIONES PASADAS": 1,
+      "CUANTO TIEMPO DESPUES SE MUDO EL ASEGURADOR TRAS EL ACCIDENTE": "NO SE HA MUDADO",
+      "TIPO DE AGENTE QUE GESTIONO LA POLIZA": "INTERNO",
+      "ZONA DONDE OCURRIO EL ACCIDENTE": "ZONA URBANA",
+      "CULPABLE DEL ACCIDENTE": "OTRA PERSONA",
+      "NUMERO DE COCHES INVOLUCRADOS EN EL ACCIDENTE": 5,
+      "INFORME POLICIAL DEL ACCIDENTE": "EXISTE",
+      "TESTIGOS DEL ACCIDENTE": "EXISTEN",
+      "NUMERO DE DOCUMENTOS RELACIONADOS CON EL ACCIDENTE": 4
+    },
+    "resultado": {
+      "score": 0.01,
+      "riesgo": "Bajo riesgo",
+      "recomendaciones": [
+        "Consultar los documentos suplementarios adjuntos al reclamo.",
+        "Solicitar testimonio o contacto del testigo.",
+        "Revisar el informe policial relacionado con el accidente.",
+        "Confirmar la responsabilidad declarada por el asegurado.",
+        "Evaluar nivel de cobertura total de la póliza por posible incentivo a fraude."
+      ]
+    },
+    "explicacion_ia": "El reclamo ha sido clasificado con un bajo riesgo, lo que refleja que hay varios elementos que sugieren una situación más sencilla y transparente en este caso.\n\nEn primer lugar, existen documentos relevantes adjuntos al reclamo, lo cual facilita la verificación de la información proporcionada. La calidad de la documentación es un factor importante en la evaluación del riesgo y, en este caso, la disponibilidad de cuatro documentos relacionados indica un proceso adecuado de formalización del reclamo.\n\nAdemás, se cuenta con un informe policial del accidente. La existencia de este informe es fundamental, ya que ofrece un análisis imparcial de los hechos ocurridos y ayuda a establecer la responsabilidad de cada una de las partes involucradas en el accidente. En este caso, el culpable ha sido reconocido como otra persona, lo que implica que el asegurado no es responsable y, por tanto, disminuye el riesgo de fraude associado al reclamo.\n\nSe ha confirmado que hay testigos del accidente, lo que también fortalece la credibilidad del incidente. La posibilidad de obtener testimonios adicionales permite validar la versión de los hechos y le da un soporte extra a la declaración del asegurado.\n\nOtro punto a considerar es la naturaleza del vehículo asegurado; el valor de 11,500 y su antigüedad de 5 años también son factores que contribuyen a la evaluación del riesgo. Un vehículo en este rango y con tipo de póliza a todo riesgo generalmente no incentiva prácticas fraudulentas, dado que su valor de reposición está alineado con la inversión hecha por el asegurado.\n\nEs importante mencionar que, aunque se han registrado reclamos anteriores, solo hay uno en el historial del asegurado. Esto sugiere que el asegurado no tiene un patrón de comportamiento problemático que pueda levantar banderas rojas en términos de fraude.\n\nLa recomendación de revisar la responsabilidad declarada por el asegurado y evaluar el nivel de cobertura total es simplemente un refuerzo que ayuda a asegurar que no haya inconsistencias en el relato"
   }
 }
